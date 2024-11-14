@@ -1,8 +1,8 @@
-name: Run E2E Testss
+name: Run E2E Tests
 on: [push]
 jobs:
   run-e2e-tests:
-    name: Run E2E Testss
+    name: Run E2E Tests
     runs-on: ubuntu-latest
     services:
       postgres:
@@ -12,7 +12,7 @@ jobs:
         env:
           POSTGRESQL_USERNAME: docker
           POSTGRESQL_PASSWORD: doecker
-          POSTGRESQL_DATABASE: api-friend
+          POSTGRESQL_DATABASE: api-find-a-friend-pg
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
